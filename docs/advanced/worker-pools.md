@@ -33,7 +33,7 @@ module "tempest-worker-pool" {
 
   count         = 2
   instance_type = "m5.large"
-  os_channel    = "beta"    
+  os_channel    = "coreos-beta"
 }
 ```
 

@@ -13,6 +13,9 @@ Notable changes between versions.
   * Add `worker_price` to allow worker spot instances. Defaults to empty string for the worker autoscaling group to use regular on-demand instances.
   * Add `spot_price` to internal `workers` module for spot [worker pools](https://typhoon.psdn.io/advanced/worker-pools/)
   * Note: Unlike GCP `preemptible` workers, spot instances require you to pick a bid price.
+* Change `os_channel` variable to represent an AMI channel for a Container Linux derivative
+  * If set, switch values `stable`, `beta`, `alpha` to `coreos-stable` (default), `coreos-beta`, `coreos-alpha`. (breaking)
+  * Allow the [Flatcar Linux](https://docs.flatcar-linux.org/) Container Linux derivative with `flatcar-stable`, `flatcar-beta`, `flatcar-alpha`.
 
 #### Addons
 

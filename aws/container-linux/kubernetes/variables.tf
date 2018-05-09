@@ -43,8 +43,8 @@ variable "worker_type" {
 
 variable "os_channel" {
   type        = "string"
-  default     = "stable"
-  description = "Container Linux AMI channel (stable, beta, alpha)"
+  default     = "coreos-stable"
+  description = "AMI channel for a Container Linux derivative (coreos-stable, coreos-beta, coreos-alpha, flatcar-stable, flatcar-beta, flatcar-alpha)"
 }
 
 variable "disk_size" {
